@@ -4,6 +4,7 @@
     margin: 0;
     box-sizing: border-box;
     padding: 0;
+    font-family: 'Montserrat', sans-serif;
 }
 
 header {
@@ -44,7 +45,6 @@ section.landing {
 }
 
 p, span {
-    font-family: 'Montserrat', sans-serif;
     color: #7C899C;
     margin-top: 30px;
 }
@@ -54,7 +54,6 @@ h1 {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
     letter-spacing: 0;
     margin: 0;
@@ -81,9 +80,12 @@ h1 {
     border-radius: 15px;
     border: 0px;
     color: white;
-    font-family: 'Montserrat', sans-serif;
     margin-left: 97px;
     width: 400px;
+}
+
+.view-products:hover {
+    width: 397px;
 }
 
 .view-products img {
@@ -119,7 +121,6 @@ h1 {
 .products {
     margin: 170px 50px;
     text-transform: uppercase;
-    font-family: 'Montserrat', sans-serif;
     font-size: 35px;
     background: #FFFFFF
 }
@@ -144,6 +145,10 @@ h1 {
     font-size: 15px;
 }
 
+.product-points:hover {
+    width: 247px;
+}
+
 footer {
     text-align: center;
 }
@@ -156,7 +161,6 @@ footer {
 }
 
 #product-name {
-    font-family: 'Montserrat', sans-serif;
     color: #252F3D;
     font-size: 16px;
     margin-left: 15px;
@@ -164,7 +168,6 @@ footer {
 }
 
 #product-category {
-    font-family: 'Montserrat', sans-serif;
     color: #7C899C;
     font-size: 13px;
     margin-left: 15px;
@@ -214,7 +217,6 @@ footer {
 }
 
 .walkthrough-card h2 {
-    font-family: 'Montserrat';
     background: linear-gradient(102.47deg, #176FEB -5.34%, #FF80FF 106.58%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -239,6 +241,7 @@ label, select, .product-order, button, .pages {
 
 label, .product-order, .pages {
     color: #7C899C;
+    text-transform: initial;
 }
 
 select, .pages {
@@ -275,15 +278,11 @@ select {
 }
 
 .order-button:hover {
-    background: #F5F9FF;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: #f6f9fd;
     background: linear-gradient(102.47deg, #176FEB -5.34%, #FF80FF 106.58%); 
 }
 
 .user-information {
-    font-family: 'Montserrat';
     font-style: normal;
     margin-left: 875px;
     border-radius: 16px;
@@ -327,7 +326,25 @@ footer img {
     left: 575px;
 }
 
-footer span {
+footer a {
     margin-left: 23px;
     margin-top: 10px;
+    text-decoration: none;
+    color: #7C899C; 
+}
+
+.quantity-products {
+    text-align: center;
+    font-size: 16px;
+    background: linear-gradient(102.47deg, #176FEB -5.34%, #FF80FF 106.58%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-style: normal;
+    text-transform: lowercase;
+    font-weight: 300;
+}
+
+.product button img {
+    position: absolute;
 }

@@ -18,14 +18,13 @@ let user_data = fetch('https://coding-challenge-api.aerolab.co/user/me', options
                         user_information.innerHTML += `
                         <a href="" class="user-information"><img src="assets/icons/aeropay-1.svg" alt="">
                         ${json.points}<img src="assets/icons/chevron-active.svg" alt=""></a>`
-
-                        let points = document.querySelector(".user_information").value
-                        console.log(points)
                     });
 
 let product_data = fetch('https://coding-challenge-api.aerolab.co/products', options)
                     .then(response => response.json())
                     .then(json => {
+                        // console.log(categories)
+                        // first_category = json[0].category
                         json.forEach((product) => {
                             products.innerHTML += `
                                 <div class="product">
@@ -34,29 +33,10 @@ let product_data = fetch('https://coding-challenge-api.aerolab.co/products', opt
                                     <p id="product-category">${product.category}</p>
                                     <button class="product-points">Redeem for ${product.cost}</button>
                                 </div>`
-                        })
-                        json.forEach((product) => {
-                            products_category.innerHTML += 
-                            `<option value=${product.category}>${product.category}</option>`
+        
+                                products_category.innerHTML += 
+                                `<option value=${product.category}>${product.category}</option>`
+                            
+                            
                         })
                     });
-
-
-
-// user_points.addEventListener("click", function(){
-//     user_information.innerHTML += `
-//     <article class="points">
-//         <h6>Add Balance</h6>
-//         <div class="card">
-//             <p class="card">Aerocard</p>
-//             <p>John Kite</p>
-//             <p>07/23</p>
-//         </div>
-//         <div class="add_points">
-//             <a>1000</a>
-//             <a>5000</a>
-//             <a>7500</a>
-//         </div>
-//         <button class="charging">Add Points</button>
-//     </article>`
-// });
