@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Aerolab</title>
+</head>
+<body>
+    <header>
+        <img src="./assets/icons/aerolab-logo-1.svg" alt="">
+    </header>
+    <main>
+        <section class="landing">
+            <div class="landing-text">
+                <p>EXPLORE THE</p>
+                <h1>tech <span class="title">zone</span> </h1>
+                <p>Here you'll be able to exchange all of your hard-earned Aeropoints and exchange them for cool tech.</p>
+            </div>
+            <div class="landing-logo">
+                <img class="logo" src="assets/illustrations/hero-desktop.png" alt="">
+            </div>
+        </section>
+        <button class="view-products">view all products <img src="assets/icons/Icons.svg" alt=""></button>
+
+        <section class="walkthrough">
+            <div class="walkthrough-card" id="card-one">
+                <img class="img-walkthrough" src="assets/illustrations/walkthroug-1-desktop.png" alt="">
+                <h2><img src="assets/icons/walkthrough-1.svg">1--Browse</h2>
+                <p class="card-paragraph">Browse our tech catalog with more than 20 top tech products</p>
+            </div>
+            <div class="walkthrough-card" id="card-two">
+                <img class="img-walkthrough" src="assets/illustrations/walkthroug-2-desktop.png" alt="">
+                <h2><img src="assets/icons/walkthrough-2.svg">2--Choose</h2>
+                <p class="card-paragraph">Exchange your hard earned AeroPoints for the item you want</p>
+            </div>
+            <div class="walkthrough-card" id="card-three">
+                <img class="img-walkthrough" src="assets/illustrations/walkthroug-3-desktop.png" alt="">
+                <h2><img src="assets/icons/walkthrough-3.svg">3--Enjoy!</h2>
+                <p class="card-paragraph">All done, you can relax! We'll take care of delivery of your tech item!</p>
+            </div>
+        </section>
+
+        <section class="products" id="products">
+            <h4>tech <span>products</span></h4>
+            <label for="product-category">Filter by:</label>
+            <select name="product-category" id="product-category">
+                <option value="all">All Products</option>
+                <!-- <option value="gaming">Gaming</option>
+                <option value="audio">Audio</option>
+                <option value="smart_home">Smart Home</option>
+                <option value="monitors_tv">Monitors & TV</option> -->
+            </select>
+            <span class="product-order">Sort by:</span>
+                <button class="order-button">Most Recent</button>
+                <button class="order-button">Lowest Price</button>
+                <button class="order-button">Highest Price</button>
+            <span class="pages">Page 1 of 2</span>
+        <article class="all-products">
+
+        </article>
+        </section>
+    </main>
+
+    <footer>
+        <img src="assets/icons/github-default.svg" alt="">
+        <span>View this repository</span>
+    </footer> 
+
+    <script src="./js/datos.js"></script>
+</body>
+</html>
