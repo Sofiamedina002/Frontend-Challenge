@@ -23,8 +23,6 @@ let user_data = fetch('https://coding-challenge-api.aerolab.co/user/me', options
 let product_data = fetch('https://coding-challenge-api.aerolab.co/products', options)
                     .then(response => response.json())
                     .then(json => {
-                        // console.log(categories)
-                        // first_category = json[0].category
                         json.forEach((product) => {
                             products.innerHTML += `
                                 <div class="product">
